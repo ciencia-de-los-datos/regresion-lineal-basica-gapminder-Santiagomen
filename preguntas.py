@@ -138,7 +138,7 @@ def pregunta_04():
     linearRegression = LinearRegression()
 
     # Entrene el clasificador usando X_train y y_train
-    LinearRegression.fit(X_train, y_train)
+    linearRegression.fit(X_train, y_train)
 
     # Pronostique y_test usando X_test
     y_pred = LinearRegression.predict(X_test)
