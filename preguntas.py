@@ -53,7 +53,7 @@ def pregunta_02():
     print(df.shape)
 
     # Imprima la correlación entre las columnas `life` y `fertility` con 4 decimales.
-    print(round(np.corrcoef(df['life'], df['fertility']),4))
+    print(round(np.corrcoef(df.life, df.fertility)[1][0],4))
 
     # Imprima la media de la columna `life` con 4 decimales.
     print(round(df['life'].mean(),4))
@@ -62,7 +62,7 @@ def pregunta_02():
     print(df['fertility'][0])
 
     # Imprima la correlación entre las columnas `GDP` y `life` con 4 decimales.
-    print(round(np.corrcoef(df['GDP'], df['life']),4))
+    print(round(np.corrcoef(df.GDP, df.life)[1][0],4))
 
 
 def pregunta_03():
