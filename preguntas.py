@@ -120,10 +120,10 @@ def pregunta_04():
     df = pd.read_csv("gm_2008_region.csv")
 
     # Asigne a la variable los valores de la columna `fertility`
-    X_fertility = np.reshape(df['fertility'].values,(139,1))
+    X_fertility = np.reshape(df.fertility.values,(139,1))
 
     # Asigne a la variable los valores de la columna `life`
-    y_life = np.reshape(df['life'].values,(139,1))
+    y_life = np.reshape(df.life.values,(139,1))
 
     # Divida los datos de entrenamiento y prueba. La semilla del generador de números
     # aleatorios es 53. El tamaño de la muestra de entrenamiento es del 80%
